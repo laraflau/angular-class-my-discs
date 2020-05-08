@@ -11,13 +11,13 @@ export const discs: Disc[] = [
     year: 1991,
   },
   {
-    title: 'Disco 2',
-    author: 'Autor 2',
-    year: 2001,
+    title: 'A Night at the Opera',
+    author: 'Queen',
+    year: 1975,
   },
   {
-    title: 'Disco 3',
-    author: 'Autor 3',
-    year: 2001,
+    title: 'Love Gun',
+    author: 'Kiss',
+    year: 1977,
   },
 ];
