@@ -10,7 +10,9 @@ import { discs, Disc } from '../discs';
 export class ListComponent implements OnInit {
   discs: Disc[];
 
-  constructor() {}
+  constructor() {
+    this.discs = discs;
+  }
 
   ngOnInit(): void {}
 }
