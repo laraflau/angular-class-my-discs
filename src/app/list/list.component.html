@@ -1,21 +1,16 @@
 <div class="container-fluid">
   <h1>Lista de discos</h1>
-  <table class="table table-bordered" border="1">
-    <thead>
-      <th>Índice</th>
-      <th>Disco</th>
-      <th>Comandos</th>
-    </thead>
-    <tbody>
-      <tr *ngFor="let disc of discs; index as index">
-        <td>{{ index }}</td>
-        <td>{{ disc.title }}</td>
-        <td>
-          <a [routerLink]="['/list', index]" rel="noopener noreferrer">{{
-            disc.title
-          }}</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div
+      class="card col-3 ml-2 mr-2"
+      style="width: 18rem;"
+      *ngFor="let disc of discs; index as index"
+    >
+      <div class="card-body">
+        <h5 class="card-title">{{ disc.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ disc.author }}</h6>
+        <a [routerLink]="['/list', index]" rel="noopener noreferrer">Acessar</a>
+      </div>
+    </div>
+  </div>
 </div>
