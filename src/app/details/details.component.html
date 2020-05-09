@@ -1,31 +1,12 @@
-<div class="container bg-light">
-  <div class="row bg-white mt-2 mb-5 justify-center align-items-start">
-    <div class="col-7 shadow p-3 rounded mr-4">
-      <header class="d-flex align-items-center mb-2">
-        <button
-          type="button"
-          class="btn btn-outline-primary"
-          [routerLink]="['/list']"
-        >
-          Voltar
-        </button>
-        <h2 class="ml-3 mb-0">Detalhes do Disco</h2>
-      </header>
-      <p>{{ disc.description }}</p>
-    </div>
-    <div class="col-4 shadow rounded">
-      <dl>
-        <dt>Capa do disco</dt>
-        <dd>
-          <img [src]="disc.cover_img" />
-        </dd>
-        <dt>Nome do disco</dt>
-        <dd>{{ disc.title }}</dd>
-        <dt>Ano</dt>
-        <dd>{{ disc.year }}</dd>
-        <dt>Autor</dt>
-        <dd>{{ disc.author }}</dd>
-      </dl>
-    </div>
-  </div>
+<div class="container-fluid">
+  <a [routerLink]="['/list']">Voltar</a>
+  <h1>Detalhes do Disco</h1>
+  <h2>Índice</h2>
+  <h3>{{ index }}</h3>
+  <h2>Nome do disco</h2>
+  <h3>{{ disc.title }}</h3>
+  <h2>Ano</h2>
+  <h3>{{ disc.year }}</h3>
+  <h2>Autor</h2>
+  <h3>{{ disc.author }}</h3>
 </div>
